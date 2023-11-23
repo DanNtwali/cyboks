@@ -43,7 +43,7 @@ function Navbar() {
               /> 
             </Link> 
             <div className={hasScrolled ? "hidden" : ""}>
-            <p className="text-lg text-white font-bold font-['Open Sans']">Welcome <br /> AQS</p>
+            <p className="text-lg text-white font-bold font-['Open Sans']">Welcome <br /> Cyboks</p>
             </div>
           </div>
           <div className="flex items-center">

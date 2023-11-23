@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link';
 import React, { useState } from 'react';
-import Popupbutton from '../Dashboard/popupbutton_aqs';
+import Popupbutton from '../Dashboard/popupbutton_cyboks';
 
 const DropdownButton: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

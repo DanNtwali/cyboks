@@ -36,7 +36,7 @@ const DButton: React.FC = () => {
           >
             <li>
               <Link
-                href="/dashboard_aqs/received"
+                href="/dashboard_cyboks/received"
                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 Received
@@ -44,7 +44,7 @@ const DButton: React.FC = () => {
             </li>
             <li>
               <Link
-                href="/dashboard_aqs/under_review"
+                href="/dashboard_cyboks/under_review"
                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 Under Review
@@ -52,7 +52,7 @@ const DButton: React.FC = () => {
             </li>
             <li>
               <Link
-                href="/dashboard_aqs/cancelled"
+                href="/dashboard_cyboks/cancelled"
                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 Cancelled
@@ -60,7 +60,7 @@ const DButton: React.FC = () => {
             </li>
             <li>
               <Link
-                href="/dashboard_aqs/sent"
+                href="/dashboard_cyboks/sent"
                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 sent
@@ -68,7 +68,7 @@ const DButton: React.FC = () => {
             </li>
             <li>
               <Link
-                href="/dashboard_aqs/certified"
+                href="/dashboard_cyboks/certified"
                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 Certified

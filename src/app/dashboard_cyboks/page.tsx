@@ -1,7 +1,7 @@
 import React from "react";
-import Sidebar from "../../components/Dashboard/sidebar_aqs";
-import Navbar from "@/components/Dashboard/navbar_aqs";
-import Popup from "@/components/Dashboard/popupbutton_aqs";
+import Sidebar from "../../components/Dashboard/sidebar_cyboks";
+import Navbar from "@/components/Dashboard/navbar_cyboks";
+import Popup from "@/components/Dashboard/popupbutton_cyboks";
 
 function NcsaDashboard() {
     return(
@@ -75,7 +75,7 @@ function NcsaDashboard() {
                     <tbody>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 <a href="http://localhost:3000/dashboard_aqs/info"> CHUK</a>
+                                 <a href="http://localhost:3000/dashboard_cyboks/info"> CHUK</a>
                             </th>
                             <td className="px-1 py-2">
                                  Antoinette Uwineza
@@ -87,7 +87,7 @@ function NcsaDashboard() {
                                  (+250) 780345627
                             </td>
                             <td className="px-1 py-2">
-                                 Pending from AQS
+                                 Pending from Cyboks
                             </td>
                             <td className="px-1 py-2">
                               <Popup/>
@@ -95,7 +95,7 @@ function NcsaDashboard() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 <a href="http://localhost:3000/dashboard_aqs/info"> Norrsken</a>
+                                 <a href="http://localhost:3000/dashboard_cyboks/info"> Norrsken</a>
                             </th>
                             <td className="px-1 py-2">
                                  Rene Patrick Komeza
@@ -147,7 +147,7 @@ function NcsaDashboard() {
                                  (+250) 780345627
                             </td>
                             <td className="px-1 py-2">
-                                 Pending from AQS
+                                 Pending from Cyboks
                             </td>
                             <td className="px-1 py-2">
                                  <Popup/>
@@ -207,7 +207,7 @@ function NcsaDashboard() {
                                  (+250) 780345627
                             </td>
                             <td className="px-1 py-2">
-                                Pending from AQS
+                                Pending from Cyboks
                             </td>
                             <td className="px-1 py-2">
                                 <Popup/>
