@@ -4,7 +4,7 @@ import Navbar from "@/components/Dashboard/navbar_cyboks";
 
 function Status() {
   return (
-    <main className="sm:flex sm:flex-row w-full h-screen bg-fixed bg-center bg-cover bg-[url('../assets/images/signup_bg.png')]">
+    <main className="sm:flex sm:flex-row w-full h-screen bg-fixed bg-center bg-cover bg-[url('../assets/images/back.png')]">
       <div>
         <Sidebar />
         <Navbar />

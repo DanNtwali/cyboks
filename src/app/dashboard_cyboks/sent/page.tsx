@@ -1,12 +1,12 @@
 import React from "react";
-import Sidebar from "../../../components/Dashboard/sidebar_aqs";
-import Navbar from "@/components/Dashboard/navbar_aqs";
-import Popup from "@/components/Dashboard/popup_aqs";
+import Sidebar from "../../../components/Dashboard/sidebar_Cyboks";
+import Navbar from "@/components/Dashboard/navbar_Cyboks";
+import Popup from "@/components/Dashboard/popup_Cyboks";
 import Link from "next/link";
 
 function Sent() {
     return(
-        <main className="sm:flex sm:flex-row w-full bg-fixed bg-center bg-cover bg-[url('../assets/images/signup_bg.png')]">
+        <main className="sm:flex sm:flex-row w-full bg-fixed bg-center bg-cover bg-[url('../assets/images/back.png')]">
           <div>
           <Sidebar/>
           <Navbar/>

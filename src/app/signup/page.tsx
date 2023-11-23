@@ -3,27 +3,29 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
 import { FormInput } from "../../components/form_input";
+import Image from "next/image";
+import logo from "../../assets/images/logo.png";
 export default function Home() {
-  const [aqsTeamVisible, setAqsTeamVisible] = useState(true);
+  const [CyboksTeamVisible, setCyboksTeamVisible] = useState(true);
   const [ncsaTeamVisible, setNcsaTeamVisible] = useState(false);
-  const [aqsClientVisible, setAqsClientVisible] = useState(false);
+  const [CyboksClientVisible, setCyboksClientVisible] = useState(false);
 
-  const handleAqsTeamClick = () => {
-    setAqsTeamVisible(true);
+  const handleCyboksTeamClick = () => {
+    setCyboksTeamVisible(true);
     setNcsaTeamVisible(false);
-    setAqsClientVisible(false);
+    setCyboksClientVisible(false);
   };
 
   const handleNcsaTeamClick = () => {
-    setAqsTeamVisible(false);
+    setCyboksTeamVisible(false);
     setNcsaTeamVisible(true);
-    setAqsClientVisible(false);
+    setCyboksClientVisible(false);
   };
 
-  const handleAqsClientClick = () => {
-    setAqsTeamVisible(false);
+  const handleCyboksClientClick = () => {
+    setCyboksTeamVisible(false);
     setNcsaTeamVisible(false);
-    setAqsClientVisible(true);
+    setCyboksClientVisible(true);
   };
   const router = useRouter();
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -32,8 +34,8 @@ export default function Home() {
     const formData = new FormData(event.currentTarget);
     const email = formData.get("email") as string;
 
-    if (email.endsWith("@africaqs.com")) {
-      router.push("/dashboard_aqs");
+    if (email.endsWith("@africCyboks.com")) {
+      router.push("/dashboard_Cyboks");
     } else if (email.endsWith("@ncsa.gov.rw")) {
       router.push("/dashboard_ncsa");
     } else {
@@ -42,8 +44,17 @@ export default function Home() {
   };
   return (
     <main className="sm:flex sm:flex-row w-full h-screen bg-cover bg-[url('../assets/images/signup_bg.png')]">
+      <div className=" mt-2 pl-2">
+      <Image
+          src={logo}
+          width={100}
+          height={100}
+          alt="The log in background"
+          className="max-w-lg mx-auto pt-4"
+        />
+      </div>
       <div className="bg-black bg-opacity-0 sm:rounded-l-xl rounded-xl h-screen w-full ">
-        <div className="item-center bg-black bg-opacity-30 sm:rounded-xl rounded-2xl h-3/4 mt-20 mb-20 ml-20 mr-20 overflow-y-auto scrollbar-hide">
+        <div className="item-center bg-black bg-opacity-60 sm:rounded-xl rounded-2xl h-3/4 mt-20 mb-20 ml-18 mr-20 overflow-y-auto scrollbar-hide">
           <h1 className="mt-1 text-center text-white text-xl font-semibold">
             Register Your Account
           </h1>
@@ -62,8 +73,8 @@ export default function Home() {
                       name="personelselection"
                       type="checkbox"
                       className="w-4 h-4 text-white bg-white border-violet-500 focus:ring-0 dark:focus:ring-0 dark:ring-offset-violet-700 focus:ring-0 dark:bg-violet-600 dark:border-white"
-                      checked={aqsTeamVisible}
-                      onChange={handleAqsTeamClick}
+                      checked={CyboksTeamVisible}
+                      onChange={handleCyboksTeamClick}
                     />
                     <span className="ml-2 text-sm text-white font-semibold ">
                       Cyboks Team
@@ -86,8 +97,8 @@ export default function Home() {
                       name="personelselection"
                       type="checkbox"
                       className="w-4 h-4 text-white bg-violet-400 border-violet-400 focus:ring-0 dark:focus:ring-0 dark:ring-offset-violet-700 focus:ring-0 dark:bg-violet-600 dark:border-white"
-                      checked={aqsClientVisible}
-                      onChange={handleAqsClientClick}
+                      checked={CyboksClientVisible}
+                      onChange={handleCyboksClientClick}
                     />
                     <span className="ml-2 text-sm text-white font-semibold ">
                       Cyboks Client
@@ -98,10 +109,10 @@ export default function Home() {
               <div className="ml-20">
                 <div
                   className={
-                    aqsTeamVisible ? "flex items-center mt-4 ml-20" : ""
+                    CyboksTeamVisible ? "flex items-center mt-4 ml-20" : ""
                   }
                 >
-                  {aqsTeamVisible && (
+                  {CyboksTeamVisible && (
                     <div className="w-full">
                       <div className="flex">
                         <div className="flex items-center mt-2">
@@ -214,10 +225,10 @@ export default function Home() {
                 </div>
                 <div
                   className={
-                    aqsClientVisible ? "flex items-center mt-1 ml-20" : ""
+                    CyboksClientVisible ? "flex items-center mt-1 ml-20" : ""
                   }
                 >
-                  {aqsClientVisible && (
+                  {CyboksClientVisible && (
                     <div className="w-full">
                       <div className="flex">
                         <div className="flex items-center mt-1">

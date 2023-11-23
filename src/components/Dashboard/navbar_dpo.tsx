@@ -36,8 +36,8 @@ function Navbar() {
             <Link href="/dashboard/user" className="flex ml-2 md:mr-24">
               <Image
                 src={logo}
-                width={120}
-                height={240}
+                width={30}
+                height={40}
                 alt="The logo image"
                 className=" mr-3"
               /> 

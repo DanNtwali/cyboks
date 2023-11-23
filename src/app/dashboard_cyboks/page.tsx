@@ -5,7 +5,7 @@ import Popup from "@/components/Dashboard/popupbutton_cyboks";
 
 function NcsaDashboard() {
     return(
-        <main className="sm:flex sm:flex-row w-full bg-fixed bg-center bg-cover bg-[url('../assets/images/signup_bg.png')]">
+        <main className="sm:flex sm:flex-row w-full bg-fixed bg-center bg-cover bg-[url('../assets/images/back.png')]">
           <div>
           <Sidebar/>
           <Navbar/>
@@ -115,7 +115,7 @@ function NcsaDashboard() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 <a href="http://localhost:3000/dashboard_aqs/info"> Skol Ltd</a>
+                                 <a href="http://localhost:3000/dashboard_Cyboks/info"> Skol Ltd</a>
                             </th>
                             <td className="px-1 py-2">
                                  Kayiranga Ernest

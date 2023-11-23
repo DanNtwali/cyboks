@@ -33,7 +33,7 @@ export default function ForgetPassword() {
                 </div>
               </form>
             </div>
-            <p className="text-white text-xl font-normal font-['Open Sans'] text-center absolute inset-x-0 bottom-3">Terms and conditions | FAQs</p>
+            <p className="text-white text-xl font-normal font-['Open Sans'] text-center absolute inset-x-0 bottom-3">Terms and conditions | FCyboks</p>
         </main>
     )
 }

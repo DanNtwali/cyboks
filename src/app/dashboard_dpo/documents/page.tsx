@@ -5,7 +5,7 @@ import Sidebar from "@/components/Dashboard/sidebar_dpo";
 import { FormEvent } from "react";
 import { useRouter } from "next/navigation";
 
-function AqsDashboard() {
+function CyboksDashboard() {
      const router = useRouter();
      const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
        event.preventDefault();
@@ -121,4 +121,4 @@ function AqsDashboard() {
     </main>
   );
 }
-export default AqsDashboard
+export default CyboksDashboard

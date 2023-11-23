@@ -23,7 +23,7 @@ function Navbar() {
   }, []);
   
   return (
-    <nav className="fixed top-0 z-50 w-full bg-fixed bg-center bg-cover bg-[url('../assets/images/signup_bg.png')]">
+    <nav className="fixed top-0 z-50 w-full bg-fixed bg-center bg-cover bg-[url('../assets/images/back.png')]">
       <div className="px-3 py-3 lg:px-5 lg:pl-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center justify-start">
@@ -36,8 +36,8 @@ function Navbar() {
             <Link href="/dashboard/user" className="flex ml-2 md:mr-24">
               <Image
                 src={logo}
-                width={120}
-                height={240}
+                width={30}
+                height={40}
                 alt="The logo image"
                 className=" mr-3"
               /> 

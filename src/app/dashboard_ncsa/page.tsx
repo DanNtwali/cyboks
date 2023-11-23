@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function NcsaDashboard() {
     return(
-        <main className="sm:flex sm:flex-row w-full bg-fixed bg-center bg-cover bg-[url('../assets/images/signup_bg.png')]">
+        <main className="sm:flex sm:flex-row w-full bg-fixed bg-center bg-cover bg-[url('../assets/images/back.png')]">
           <div>
           <Sidebar/>
           <Navbar/>
@@ -87,7 +87,7 @@ function NcsaDashboard() {
                                  (+250) 780345627
                             </td>
                             <td className="px-1 py-2">
-                                 Pending from AQS
+                                 Pending from Cyboks
                             </td>
                             <td className="px-1 py-2">
                                  No Actions
@@ -147,7 +147,7 @@ function NcsaDashboard() {
                                  (+250) 780345627
                             </td>
                             <td className="px-1 py-2">
-                                 Pending from AQS
+                                 Pending from Cyboks
                             </td>
                             <td className="px-1 py-2">
                                  No Actions
@@ -207,7 +207,7 @@ function NcsaDashboard() {
                                  (+250) 780345627
                             </td>
                             <td className="px-1 py-2">
-                                 Pending from AQS
+                                 Pending from Cyboks
                             </td>
                             <td className="px-1 py-2">
                                  No Actions

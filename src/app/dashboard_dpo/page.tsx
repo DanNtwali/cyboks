@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function DpoDashboard() {
     return(
-        <main className="sm:flex sm:flex-row w-full h-screen bg-fixed bg-center bg-cover bg-[url('../assets/images/signup_bg.png')]">
+        <main className="sm:flex sm:flex-row w-full h-screen bg-fixed bg-center bg-cover bg-[url('../assets/images/back.png')]">
           <div>
           <Sidebar/>
           <Navbar/>
@@ -49,7 +49,7 @@ function DpoDashboard() {
                                  Documents Description
                             </th>
                             <th scope="col" className="px-8 py-2">
-                                 Status From AQS
+                                 Status From Cyboks
                             </th>
                             <th scope="col" className="px-8 py-2">
                                  Status From NCSA

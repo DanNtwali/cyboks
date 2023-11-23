@@ -5,7 +5,7 @@ import React from "react";
 
 function DpoDashboard() {
     return(
-        <main className="sm:flex sm:flex-row w-full h-screen bg-fixed bg-center bg-cover bg-[url('../assets/images/signup_bg.png')]">
+        <main className="sm:flex sm:flex-row w-full h-screen bg-fixed bg-center bg-cover bg-[url('../assets/images/back.png')]">
           <div>
           <Sidebar/>
           <Navbar/>
@@ -52,8 +52,8 @@ function DpoDashboard() {
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                 </svg>
               </span>
-              <h3 className="font-medium leading-tight">Received by AQS</h3>
-              <p className="text-xs font-light">Your documents were received by AQS</p>
+              <h3 className="font-medium leading-tight">Received by Cyboks</h3>
+              <p className="text-xs font-light">Your documents were received by Cyboks</p>
             </li>
             <li className="mb-10 ml-6">
               <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-100 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-orange-300">
@@ -62,7 +62,7 @@ function DpoDashboard() {
                 </svg>
               </span>
               <h3 className="font-medium leading-tight">Under Review</h3>
-              <p className="text-xs font-light">Your documents are being reviewed by AQS</p>
+              <p className="text-xs font-light">Your documents are being reviewed by Cyboks</p>
             </li>
             <li className="mb-10 ml-6">
               <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-100 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-orange-300">

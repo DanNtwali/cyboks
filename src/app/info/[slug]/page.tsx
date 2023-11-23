@@ -10,12 +10,12 @@ export default async function Blogservice({params}: any) {
   : null;
   
   return (
-    <main className="sm:flex sm:flex-row w-full h-screen bg-fixed bg-center bg-cover bg-[url('../assets/images/signup_bg.png')]">
+    <main className="sm:flex sm:flex-row w-full h-screen bg-fixed bg-center bg-cover bg-[url('../assets/images/back.png')]">
           <div>
           <Sidebar/>
           <Navbar/>
           </div>
-        <div className="p-4 sm:ml-64 p-2 mt-16 ">
+    <div className="p-4 sm:ml-96 p-2 mt-16 ">
     <div className="container mx-auto py-8 h-fit bg-white rounded-lg sm:rounded-lg px-8">
       <h1 className="text-3xl text-violet-400 font-bold mb-4">{service?.title}</h1>
       <div className="grid grid-cols-2 gap-4">
