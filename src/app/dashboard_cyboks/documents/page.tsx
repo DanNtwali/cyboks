@@ -1,13 +1,13 @@
 'use client'
 import {useState} from 'react';
 import { FileUpload } from "@/components/Dashboard/file_upload";
-import Navbar from "@/components/Dashboard/navbar_aqs";
-import Sidebar from "@/components/Dashboard/sidebar_aqs";
+import Navbar from "@/components/Dashboard/navbar_cyboks";
+import Sidebar from "@/components/Dashboard/sidebar_cyboks";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FormEvent } from "react";
 
-function AqsDashboard() {
+function CyboksDashboard() {
   const router = useRouter();
 
   const handleSave = () => {
@@ -19,7 +19,7 @@ function AqsDashboard() {
 
     console.log("Form submitted");
 
-    router.push('/dashboard_aqs/compliance');
+    router.push('/dashboard_cyboks/compliance');
   };
 
 return(
@@ -33,7 +33,7 @@ return(
                 <h3 className="font-bold font-['Open Sans'] text-xl text-white pl-2 pt-1">Compliance Steps</h3>
                 <div>
                   <div className=" p-2 mt-4 rounded-lg sm:rounded-lg m-2">
-                  <div className="text-white text-sm hover:text-orange-500">
+                  <div className="text-white text-sm hover:text-violet-400">
                     <Link href={""}>1. Summary About The Law</Link>
                   </div>
                   <div className="mt-1">
@@ -96,19 +96,19 @@ return(
                       handleFileChange={undefined}
                       />
                   </div>
-                  <div className="text-white text-sm mt-1 hover:text-orange-500">
+                  <div className="text-white text-sm mt-1 hover:text-violet-400">
                     <Link href={""}>7. Employee Training</Link>
                   </div>
                   </div>
                   <div className="flex justify-between mt-8 px-16">
                   <button
                     onClick={handleSave}
-                    className="bg-black bg-opacity-0 border border-solid border-white hover:bg-orange-600 text-white font-semibold py-2 w-full rounded-xl">
+                    className="bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-(500) text-white font-semibold py-2 w-full rounded-xl">
                       Save
                     </button>
                     <button 
                     type='submit'
-                    className="ml-6 bg-black bg-opacity-0 border border-solid border-white hover:bg-orange-600 text-white font-semibold py-2 w-full rounded-xl">
+                    className="ml-6 bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-(500) text-white font-semibold py-2 w-full rounded-xl">
                       Submit
                     </button>
                   </div>
@@ -131,13 +131,13 @@ return(
                 <div className="flex justify-between mt-8 pb-8 px-16">
                   <button 
                     onClick={handleSave}
-                    className="bg-black bg-opacity-0 border border-solid border-white hover:bg-orange-600 text-white font-semibold py-2 w-full rounded-xl">
+                    className="bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-(500) text-white font-semibold py-2 w-full rounded-xl">
                       Save
                   </button>
                   <button 
                     type='submit'
                     onClick={handleSubmit}
-                    className="ml-6 bg-black bg-opacity-0 border border-solid border-white hover:bg-orange-600 text-white font-semibold py-2 w-full rounded-xl">
+                    className="ml-6 bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-(500) text-white font-semibold py-2 w-full rounded-xl">
                       Submit
                   </button>
                 </div>
@@ -146,4 +146,4 @@ return(
     </main>
   );
 }
-export default AqsDashboard
+export default CyboksDashboard

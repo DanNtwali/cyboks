@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link';
 import React, { useState } from 'react';
-import Popupbutton from '../Dashboard/popupbutton_aqs';
+import Popupbutton from '../Dashboard/popupbutton_cyboks';
 
 const DropdownButton: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ const DropdownButton: React.FC = () => {
       <button
         id="dropdownDefaultButton"
         onClick={toggleDropdown}
-        className="text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800"
+        className="text-white bg-violet-400 hover:bg-violet-500 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-violet-500 dark:hover:bg-violet-600 dark:focus:ring-violet-700"
         type="button"
       >
         Options{' '}
@@ -45,7 +45,7 @@ const DropdownButton: React.FC = () => {
             aria-labelledby="dropdownDefaultButton"
           >
             <li>
-              <Link href={'/info'} className='font-bold text-orange-600 dark:text-orange-500 hover:underline cursor-pointer'>View</Link>        
+              <Link href={'/info'} className='font-bold text-violet-500 dark:text-violet-400 hover:underline cursor-pointer'>View</Link>        
             </li>
             <li>
               <Popupbutton/>

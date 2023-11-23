@@ -1,7 +1,7 @@
 import React from "react";
-import Sidebar from "../../../components/Dashboard/sidebar_aqs";
-import Navbar from "@/components/Dashboard/navbar_aqs";
-import Popup from "@/components/Dashboard/popupbutton_aqs";
+import Sidebar from "../../../components/Dashboard/sidebar_cyboks";
+import Navbar from "@/components/Dashboard/navbar_cyboks";
+import Popup from "@/components/Dashboard/popupbutton_cyboks";
 
 function Cancelled() {
     return(
@@ -14,7 +14,7 @@ function Cancelled() {
             <div className=" p-2 mt-14 bg-white rounded-lg sm:rounded-lg">
                 <h3 className="font-bold font-['Open Sans'] text-lg text-black pl-2 pt-1">Rejected Companies</h3>
                 <table className="relative overflow-y-auto w-full text-sm mt-4 font-['Open Sans'] text-left text-gray-500">
-                    <thead className="text-xs text-orange-500 bg-gray-50">
+                    <thead className="text-xs text-violet-400 bg-gray-50">
                          <tr> 
                              <th scope="col" className="px-1 py-2">
                                  Company Name
