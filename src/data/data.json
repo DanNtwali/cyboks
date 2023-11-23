@@ -3,20 +3,38 @@
       {
         "slug": "chuk",
         "title": "CHUK",
-        "description": "description1",
-        "documents": "link1"
+        "dpoName": "Kubaho Linne Heaven",
+        "dpoPhone": "0787854593",
+        "dpoEmail": "kubaholinne@chuk.com",
+        "docStatus": "Pending from Cyboks",
+        "doc1": "link1",
+        "doc2": "link1",
+        "doc3": "link1",
+        "doc4": "link1"
       },
       {
         "slug": "norrsken",
         "title": "NORRSKEN",
-        "description": "description2",
-        "documents": "link2"
+        "dpoName": "Saro Alrene",
+        "dpoPhone": "0734567544",
+        "dpoEmail": "a.saro@norrsken.com",
+        "docStatus": "pending from DPO",
+        "doc1": "link1",
+        "doc2": "link1",
+        "doc3": "link1",
+        "doc4": "link1"
       },
       {
         "slug": "skol_Ltd",
         "title": "SKOL LTD",
-        "description": "description3",
-        "documents": "link3"
-      },
+        "dpoName": "Ntwali daniel",
+        "dpoPhone": "0790457643",
+        "dpoEmail": "n.daniel@skol.com",
+        "docStatus": "Submitted to ncsa",
+        "doc1": "link1",
+        "doc2": "link1",
+        "doc3": "link1",
+        "doc4": "link1"
+      }
     ]
   }
