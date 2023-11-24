@@ -27,7 +27,7 @@ export default function ForgetPassword() {
                 />
                 <div className="flex flex-col items-center justify-center">
 
-                    <button className="bg-white hover:bg-green-50 text-orange-500 font-semibold py-2 my-11 w-1/4 rounded-lg border">
+                    <button className="bg-white hover:bg-green-50 text-violet-500 font-semibold py-2 my-11 w-1/4 rounded-lg border">
                         Submit
                     </button>
                 </div>

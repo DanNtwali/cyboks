@@ -111,7 +111,7 @@ function CyboksDashboard() {
                 <div className="mt-8 px-16">
                   <button 
                   type='submit'
-                  className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 w-full rounded-xl">
+                  className="bg-violet-600 hover:bg-violet-700 text-white font-semibold py-2 w-full rounded-xl">
                     Submit
                   </button>
                 </div>

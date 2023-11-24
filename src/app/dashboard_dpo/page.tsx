@@ -43,7 +43,7 @@ function DpoDashboard() {
                 <h3 className="font-bold font-['Open Sans'] text-lg text-black pl-2 pt-1">List of Uploaded Administrative Documents</h3>
                 <Link className="font-medium text-sm ml-2 text-red-600 dark:text-red-500 hover:underline cursor-pointer" href={"/dashboard_dpo/documents"}>+Add</Link>
                 <table className="relative overflow-y-auto w-full text-sm text-l mt-4 font-['Open Sans'] text-left text-gray-500">
-                    <thead className="text-xs text-orange-500 bg-gray-50">
+                    <thead className="text-xs text-violet-500 bg-gray-50">
                          <tr>
                              <th scope="col" className="px-1 py-2">
                                  Documents Description
