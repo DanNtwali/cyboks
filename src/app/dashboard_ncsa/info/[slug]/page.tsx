@@ -1,5 +1,6 @@
+'use client'
 import Sidebar from '@/components/Dashboard/sidebar';
-import  data  from '../../../data/data.json'
+import  data  from '../../../../data/data.json';
 import Navbar from '@/components/Dashboard/navbar';
 import Link from 'next/link';
 import { FileUpload } from '@/components/Dashboard/file_upload';
@@ -31,17 +32,42 @@ export default async function Blogservice({params}: any) {
         <div>{service?.dpoEmail}</div>
         <div className="font-bold">Document Status:</div>
         <div>{service?.docStatus}</div>
-        <div className="font-bold">Document 1:</div>
+        <div className="font-bold">Administrative Documents:</div>
         <div><Link href="" className='text-blue-300 hover:underline'>{service?.doc1}</Link></div>
-        <div className="font-bold">Document 2:</div>
+        <div className="font-bold">Required Data Protection Policies:</div>
         <div><Link href="" className='text-blue-300 hover:underline'>{service?.doc2}</Link></div>
-        <div className="font-bold">Document 3:</div>
-        <div><Link href="" className='text-blue-300 hover:underline'>{service?.doc3}</Link></div>
-        <div className="font-bold">Document 4:</div>
-        <div><Link href="" className='text-blue-300 hover:underline'>{service?.doc4}</Link></div>
-        
       </div>
     </div>
+    </div>
+    <div className="w-1/2">
+    <div className=' px-4'>
+            <div className=" p-2 mt-2 rounded-lg sm:rounded-lg m-2">
+                <div className="p-4 mt-1">
+                  <FileUpload
+                    labelClass="text-white text-sm font-normal "
+                    labelName="Upload Certificate"
+                    inputType="file"
+                    inputClass="relative ml-3 block w-full min-w-0 flex-auto rounded border border-solid border-white px-3 py-[0.32rem] text-base font-normal text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none "
+                    inputName="Document"
+                    containerClass="w-full sm:pr-4" 
+                    disable={false} 
+                    handleFileChange={undefined}
+                    />
+                </div>
+                <div className="flex justify-between px-16">
+                  <button 
+                    className="bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-500 text-white font-semibold py-2 w-full rounded-xl">
+                      Save
+                  </button>
+                  <button 
+                    type='submit'
+                    className="ml-6 bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-500 text-white font-semibold py-2 w-full rounded-xl">
+                      Submit
+                  </button>
+                </div>
+            </div>  
+          </div>
+    
     <div className='pt-2'>
         <form>
           <div className="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
@@ -123,139 +149,16 @@ export default async function Blogservice({params}: any) {
               </div>
               <div className="px-4 bg-white rounded-b-lg dark:bg-gray-800">
                   <label htmlFor="editor" className="sr-only">Publish post</label>
-                  <textarea id="editor" rows={8} className="block w-full px-0 text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="Write an article..." required></textarea>
+                  <textarea id="editor" rows={8} className="block w-full px-0 text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="Write a comment to support your decision..." required></textarea>
               </div>
           </div>
           <button 
             type='submit'
-            className="ml-6 py-2 px-4 bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-(500) text-white font-semibold rounded-xl">
+            className="ml-6 py-2 px-4 bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-500 text-white font-semibold rounded-xl">
               Comment
           </button>
         </form>
         </div>
-    </div>
-    <div className="w-1/2">
-    <div className="container mx-auto py-8 h-fit border rounded-lg sm:rounded-lg px-8">
-    <div className=' px-4'>
-            <div className=" px-2 rounded-lg sm:rounded-lg m-2">
-                <h3 className="font-bold font-['Open Sans'] text-xl text-white pl-2 pt-1">Compliance Steps</h3>
-                <div>
-                  <div className=" p-2 mt-4 rounded-lg sm:rounded-lg m-2">
-                  <div className="text-white text-sm hover:text-violet-400">
-                    <Link href={""}>1. Summary About The Law</Link>
-                  </div>
-                  <div className="mt-1">
-                    <FileUpload
-                      labelClass="text-white text-sm font-normal "
-                      labelName="2. General data mapping questionnaire"
-                      inputType="file"
-                      inputClass="relative ml-3 block w-full min-w-0 flex-auto rounded border border-solid border-white px-3 py-[0.32rem] text-base font-normal text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none "
-                      inputName="Document"
-                      containerClass="w-full sm:pr-4" 
-                      disable={false} 
-                      handleFileChange={undefined}
-                      />
-                  </div>   
-                  <div>
-                    <FileUpload
-                     labelClass="text-white text-sm font-normal "
-                     labelName="3. Gap Analysis"
-                     inputType="file"
-                     inputClass="relative ml-3 block w-full min-w-0 flex-auto rounded border border-solid border-white px-3 py-[0.32rem] text-base font-normal text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none "
-                     inputName="Document"
-                     containerClass="w-full sm:pr-4"
-                     disable={false} 
-                     handleFileChange={undefined}
-                    />
-                  </div>
-                  <div>
-                    <FileUpload
-                      labelClass="text-white text-sm font-normal "
-                      labelName="4. Risk Assessments"
-                      inputType="file"
-                      inputClass="relative ml-3 block w-full min-w-0 flex-auto rounded border border-solid border-white px-3 py-[0.32rem] text-base font-normal text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none "
-                      inputName="Document"
-                      containerClass="w-full sm:pr-4" 
-                      disable={false} 
-                      handleFileChange={undefined}
-                      />
-                  </div>
-                  <div>
-                    <FileUpload
-                      labelClass="text-white text-sm font-normal "
-                      labelName="5. Risk Mitigation"
-                      inputType="file"
-                      inputClass="relative ml-3 block w-full min-w-0 flex-auto rounded border border-solid border-white px-3 py-[0.32rem] text-base font-normal text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none "
-                      inputName="Document"
-                      containerClass="w-full sm:pr-4" 
-                      disable={false} 
-                      handleFileChange={undefined}
-                      />
-                  </div>
-                  <div>
-                    <FileUpload
-                      labelClass="text-white text-sm font-normal "
-                      labelName="6. Incidence Response Plan"
-                      inputType="file"
-                      inputClass="relative ml-3 block w-full min-w-0 flex-auto rounded border border-solid border-white px-3 py-[0.32rem] text-base font-normal text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none "
-                      inputName="Document"
-                      containerClass="w-full sm:pr-4" 
-                      disable={false} 
-                      handleFileChange={undefined}
-                      />
-                  </div>
-                  <div className="text-white text-sm mt-1 hover:text-violet-400">
-                    <FormInput 
-                    labelClass="text-gray-700 text-sm text-white font-normal font-['Open Sans']"
-                    containerClass="" 
-                    labelName='Link to training' 
-                    inputType='Link' 
-                    inputClass='border bg-neutral-100 border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5' 
-                    inputName='text' 
-                    inputPlaceholder='Link' 
-                    />
-                  </div>
-                  </div>
-                  <div className="flex justify-between mt-4 px-16">
-                  <button
-                    className="bg-black py-2 bg-opacity-0 border border-solid border-white hover:bg-violet-(500) text-white font-semibold  w-full rounded-xl">
-                      Save
-                    </button>
-                    <button 
-                    type='submit'
-                    className="ml-6 py-2 bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-(500) text-white font-semibold w-full rounded-xl">
-                      Submit
-                    </button>
-                  </div>
-                </div>
-            </div>
-            <div className=" p-2 mt-2 rounded-lg sm:rounded-lg m-2">
-                <div className="p-4 mt-1">
-                  <FileUpload
-                    labelClass="text-white text-sm font-normal "
-                    labelName="Required Data Protection Policies"
-                    inputType="file"
-                    inputClass="relative ml-3 block w-full min-w-0 flex-auto rounded border border-solid border-white px-3 py-[0.32rem] text-base font-normal text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none "
-                    inputName="Document"
-                    containerClass="w-full sm:pr-4" 
-                    disable={false} 
-                    handleFileChange={undefined}
-                    />
-                </div>
-                <div className="flex justify-between px-16">
-                  <button 
-                    className="bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-(500) text-white font-semibold py-2 w-full rounded-xl">
-                      Save
-                  </button>
-                  <button 
-                    type='submit'
-                    className="ml-6 bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-(500) text-white font-semibold py-2 w-full rounded-xl">
-                      Submit
-                  </button>
-                </div>
-            </div>  
-          </div>
-    </div>
     </div>
         
     </div>

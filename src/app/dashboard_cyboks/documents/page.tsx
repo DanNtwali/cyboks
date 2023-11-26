@@ -103,12 +103,12 @@ return(
                   <div className="flex justify-between mt-8 px-16">
                   <button
                     onClick={handleSave}
-                    className="bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-(500) text-white font-semibold py-2 w-full rounded-xl">
+                    className="bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-500 text-white font-semibold py-2 w-full rounded-xl">
                       Save
                     </button>
                     <button 
                     type='submit'
-                    className="ml-6 bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-(500) text-white font-semibold py-2 w-full rounded-xl">
+                    className="ml-6 bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-500 text-white font-semibold py-2 w-full rounded-xl">
                       Submit
                     </button>
                   </div>
@@ -131,13 +131,13 @@ return(
                 <div className="flex justify-between mt-8 pb-8 px-16">
                   <button 
                     onClick={handleSave}
-                    className="bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-(500) text-white font-semibold py-2 w-full rounded-xl">
+                    className="bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-500 text-white font-semibold py-2 w-full rounded-xl">
                       Save
                   </button>
                   <button 
                     type='submit'
                     onClick={handleSubmit}
-                    className="ml-6 bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-(500) text-white font-semibold py-2 w-full rounded-xl">
+                    className="ml-6 bg-black bg-opacity-0 border border-solid border-white hover:bg-violet-500 text-white font-semibold py-2 w-full rounded-xl">
                       Submit
                   </button>
                 </div>

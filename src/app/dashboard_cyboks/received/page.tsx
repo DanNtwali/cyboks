@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "../../../components/Dashboard/sidebar_cyboks";
 import Navbar from "@/components/Dashboard/navbar_cyboks";
 import DropdownButton from "@/components/Dashboard/dropbutton_cyboks";
+import Link from "next/link";
 
 
 function Received() {
@@ -40,7 +41,7 @@ function Received() {
                     <tbody>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 <a href="http://localhost:3000/info"> CHUK</a>
+                                 <Link href="/dashboard_cyboks/info/chuk">CHUK</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Antoinette Uwineza
@@ -60,7 +61,7 @@ function Received() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 Norrsken
+                            <Link href="/dashboard_cyboks/info/norrsken">Norrsken</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Rene Patrick Komeza
@@ -80,7 +81,7 @@ function Received() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 Skol Ltd
+                            <Link href="/dashboard_cyboks/info/skol_Ltd">Skol Ltd</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Kayiranga Ernest
@@ -100,7 +101,7 @@ function Received() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 <a href="http://localhost:3000/info"> CHUK</a>
+                                 <Link href="/dashboard_cyboks/info/chuk">CHUK</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Antoinette Uwineza
@@ -120,7 +121,7 @@ function Received() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 Norrsken
+                            <Link href="/dashboard_cyboks/info/norrsken">Norrsken</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Rene Patrick Komeza
@@ -129,7 +130,7 @@ function Received() {
                                  r.komeza@norrsken.com
                             </td>
                             <td className="px-1 py-2">
-                                 (+250) 780345627
+                                (+250) 780345627
                             </td>
                             <td className="px-1 py-2">
                                  Received
@@ -140,7 +141,7 @@ function Received() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 Skol Ltd
+                            <Link href="/dashboard_cyboks/info/skol_Ltd">Skol Ltd</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Kayiranga Ernest
@@ -160,7 +161,7 @@ function Received() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 <a href="http://localhost:3000/info"> CHUK</a>
+                                 <Link href="/dashboard_cyboks/info/chuk">CHUK</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Antoinette Uwineza
@@ -180,7 +181,7 @@ function Received() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 Norrsken
+                            <Link href="/dashboard_cyboks/info/norrsken">Norrsken</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Rene Patrick Komeza
@@ -189,7 +190,7 @@ function Received() {
                                  r.komeza@norrsken.com
                             </td>
                             <td className="px-1 py-2">
-                                 (+250) 780345627
+                                (+250) 780345627
                             </td>
                             <td className="px-1 py-2">
                                  Received
@@ -200,10 +201,10 @@ function Received() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 Skol Ltd
+                            <Link href="/dashboard_cyboks/info/skol_Ltd">Skol Ltd</Link>
                             </th>
                             <td className="px-1 py-2">
-                                Kayiranga Ernest
+                                 Kayiranga Ernest
                             </td>
                             <td className="px-1 py-2">
                                  e.kayiranga@skolbrewery.com

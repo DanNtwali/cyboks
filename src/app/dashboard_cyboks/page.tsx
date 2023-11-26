@@ -76,7 +76,7 @@ function NcsaDashboard() {
                     <tbody>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 <Link href="/info/chuk">CHUK</Link>
+                                 <Link href="/dashboard_cyboks/info/chuk">CHUK</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Antoinette Uwineza
@@ -96,7 +96,7 @@ function NcsaDashboard() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            <Link href="/info/norrsken">Norrsken</Link>
+                            <Link href="/dashboard_cyboks/info/norrsken">Norrsken</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Rene Patrick Komeza
@@ -116,7 +116,7 @@ function NcsaDashboard() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            <Link href="/info/skol_Ltd">Skol Ltd</Link>
+                            <Link href="/dashboard_cyboks/info/skol_Ltd">Skol Ltd</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Kayiranga Ernest
@@ -136,7 +136,7 @@ function NcsaDashboard() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 <Link href="/info/chuk">CHUK</Link>
+                                 <Link href="/dashboard_cyboks/info/chuk">CHUK</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Antoinette Uwineza
@@ -156,7 +156,7 @@ function NcsaDashboard() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            <Link href="/info/norrsken">Norrsken</Link>
+                            <Link href="/dashboard_cyboks/info/norrsken">Norrsken</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Rene Patrick Komeza
@@ -176,7 +176,7 @@ function NcsaDashboard() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            <Link href="/info/skol_Ltd">Skol Ltd</Link>
+                            <Link href="/dashboard_cyboks/info/skol_Ltd">Skol Ltd</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Kayiranga Ernest
@@ -196,7 +196,7 @@ function NcsaDashboard() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 <Link href="/info/chuk">CHUK</Link>
+                                 <Link href="/dashboard_cyboks/info/chuk">CHUK</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Antoinette Uwineza
@@ -216,7 +216,7 @@ function NcsaDashboard() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            <Link href="/info/norrsken">Norrsken</Link>
+                            <Link href="/dashboard_cyboks/info/norrsken">Norrsken</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Rene Patrick Komeza
@@ -236,7 +236,7 @@ function NcsaDashboard() {
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row" className="px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            <Link href="/info/skol_Ltd">Skol Ltd</Link>
+                            <Link href="/dashboard_cyboks/info/skol_Ltd">Skol Ltd</Link>
                             </th>
                             <td className="px-1 py-2">
                                  Kayiranga Ernest
