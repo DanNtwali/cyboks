@@ -15,7 +15,7 @@ function Pending() {
             <div className=" p-2 mt-14 bg-white rounded-lg sm:rounded-lg">
                 <h3 className="font-bold font-['Open Sans'] text-lg text-black pl-2 pt-1">Companies Under Review</h3>
                 <table className="relative overflow-y-auto w-full text-sm mt-4 font-['Open Sans'] text-left text-gray-500">
-                    <thead className="text-xs text-orange-500 bg-gray-50">
+                    <thead className="text-xs text-violet-500 bg-gray-50">
                          <tr>
                              <th scope="col" className="px-1 py-2">
                                  Company Name

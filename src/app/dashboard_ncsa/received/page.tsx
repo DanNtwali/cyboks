@@ -14,9 +14,9 @@ function Received() {
         <div className="p-8 sm:ml-64 mr-0">
             <div className=" p-2 mt-14 bg-white rounded-lg sm:rounded-lg">
                 <h3 className="font-bold font-['Open Sans'] text-lg text-black pl-2 pt-1">Received Companies</h3>
-                <p className="text-orange-500 text-xl text-semibold pl-2">+ <span className="text-gray-400 text-sm">5 Received Companies</span></p>
+                <p className="text-violet-500 text-xl text-semibold pl-2">+ <span className="text-gray-400 text-sm">5 Received Companies</span></p>
                 <table className="relative overflow-y-auto w-full text-sm mt-4 font-['Open Sans'] text-left text-gray-500">
-                    <thead className="text-xs text-orange-500 bg-gray-50">
+                    <thead className="text-xs text-violet-500 bg-gray-50">
                          <tr>
                              <th scope="col" className="px-1 py-2">
                                  Company Name
