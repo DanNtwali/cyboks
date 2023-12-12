@@ -31,9 +31,9 @@ export async function middleware(request: NextRequest) {
   }
 
   // Role-based
-  // if (decodedToken && url === `/dashboard/cyboks` && userRole === USER_ROLES.DPO) {
-  //   return NextResponse.redirect(new URL(`/dashboard/dpo`, request.url));
-  // }
+  if (decodedToken && url === `/dashboard/cyboks` && userRole === USER_ROLES.DPO) {
+    return NextResponse.redirect(new URL(`/dashboard/dpo`, request.url));
+  }
 
   if (
     decodedToken &&

@@ -7,8 +7,12 @@ import { getUrlByPathname } from "@/utils";
 import SidebarDropdown from "../shared/SidebarDropdown";
 import SidebarChartIcon from "../icons/SidebarChartIcon";
 
-const Sidebar = () => {
-  // get the path name
+type Prop_ = {
+  name?: string
+}
+
+const Sidebar = ({name}: Prop_) => {
+  // get the path name 
   const url = usePathname();
 
   return (
@@ -20,8 +24,8 @@ const Sidebar = () => {
       <ul className="space-y-2 font-medium px-2">
         <li>
           <Link
-            href={getUrlByPathname(url)}
-            className="flex items-center p-2 text-white rounded-lg hover:bg-violet-500 group hover:font-bold"
+            href="/dashboard/dpo"
+            className={url === getUrlByPathname(url)?"flex items-center p-2 text-white rounded-lg bg-violet-500 group font-bold":"flex items-center p-2 text-white rounded-lg hover:bg-violet-500 group hover:font-bold"}
           >
             <div className=" bg-white px-2 py-1 rounded-lg group-hover:bg-violet-500 ">
               <svg
@@ -39,16 +43,16 @@ const Sidebar = () => {
           </Link>
         </li>
 
-        {(url === "/dashboard/cyboks" || url === "/dashboard/ncsa") && (
+        {/* {(url === "/dashboard/cyboks" || url === "/dashboard/ncsa") && (
           <SidebarDropdown />
-        )}
+        )} */}
 
         {url === "/dashboard/dpo" && (
           <>
             <li>
               <Link
-                href={`/dashboard/dpo/compliance`}
-                className="flex items-center p-2 text-white rounded-lg hover:bg-violet-500 group hover:font-bold"
+                href={`/dashboard/dpo/documents/stage1`}
+                className={url.includes('documents')?"flex items-center p-2 text-white rounded-lg bg-violet-500 group font-bold":"flex items-center p-2 text-white rounded-lg hover:bg-violet-500 group hover:font-bold"}
               >
                 <SidebarChartIcon />
                 <span className="flex-1 ml-3 whitespace-nowrap">
@@ -69,7 +73,15 @@ const Sidebar = () => {
             </li>
           </>
         )}
-
+        {name?<li>
+          <Link
+            href=""
+            className="flex items-center p-2 text-white rounded-lg bg-violet-500 group font-bold"
+          >
+            <SidebarChartIcon />
+            <span className="flex-1 ml-3 whitespace-nowrap">{name}</span>
+          </Link>
+        </li>:''}
         <li>
           <Link
             href={`${getUrlByPathname(url)}/feedback`}

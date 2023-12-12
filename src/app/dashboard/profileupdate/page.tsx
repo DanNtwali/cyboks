@@ -85,7 +85,7 @@ useEffect(() => {
         };
         setIsLoading(true);
   
-        const res = await axiosAPI.put(`/update/user/${9}`, payload);
+        const res = await axiosAPI.put(`/update/user/${7}`, payload);
   
       } catch (err: any) {
         try {

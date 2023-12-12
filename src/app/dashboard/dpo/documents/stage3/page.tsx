@@ -17,7 +17,7 @@ function dpoStage3() {
     const [videoId, setVideoId] = useState<any>(false);
     const [docs, setDocs] = useState<any>([]);
     const [isLoading, setIsLoading] = useState(false);
-    const userId = 9
+    const userId = 7
     const axiosAPI = new AxiosAPI();
 
     console.log('the user ID', userId)
@@ -26,7 +26,7 @@ function dpoStage3() {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const response = await axiosAPI.get<any>(`/getData/users/${9}`);
+        const response = await axiosAPI.get<any>(`/getData/users/${7}`);
         setUser(response);
         console.log("Fetched data", response);
       } catch (error) {
@@ -101,18 +101,18 @@ function dpoStage3() {
         </div>
         <div className="flex flex-row justify-between">
           <div className=" p-2 rounded-lg sm:rounded-lg m-2">
-            <PrimaryClientDocModal docsId={16}/>
+            <PrimaryClientDocModal docsId={3}/>
           </div>
           <div className=" p-2 rounded-lg sm:rounded-lg m-2">
-            <AdDocComments options={options}  docsId={16} userId={9}/>
+            <AdDocComments options={options}  docsId={3} userId={7}/>
           </div>
         </div>
         <div className="flex flex-row gap-8 mb-4">
           <div>
-            <ViewDocs userId={9} viewdocs={docs}/>
-            <YouTube videoId={videoId[videoId.length - 1]} className="mt-8 rounded-lg"/>
+            <ViewDocs userId={7} viewdocs={docs}/>
+            {videoId?<YouTube videoId={videoId[videoId?.length - 1]} className="mt-8 rounded-lg"/>:""}
           </div>
-          <ViewCommentChat options={options} userId={9} documentId={16}/>
+          <ViewCommentChat options={options} userId={7} documentId={3}/>
         </div>
       </div>
     </main>

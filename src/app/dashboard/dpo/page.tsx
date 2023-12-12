@@ -22,7 +22,7 @@ const DPODashboard = () => {
 
   // session
   const session = useSession();
-  console.log({ session });
+  console.log('sessions',{ session });
 
   // axios api class
   const axiosAPI = new AxiosAPI();
@@ -147,11 +147,10 @@ const DPODashboard = () => {
           <div className="flex flex-row gap-8 mb-4">
             
             <div>
-              <ViewDocs userId={9} viewdocs={docs}/>
+              <ViewDocs userId={7} viewdocs={docs}/>
               {videoId?<YouTube videoId={videoId[videoId?.length - 1]} className="mt-8 rounded-lg"/>:""}
             </div>
-            <ViewCommentChat options={options} userId={9} documentId={16}/>
-
+            <ViewCommentChat options={options} userId={7} documentId={3}/>
           </div>
         </div>
       </div>

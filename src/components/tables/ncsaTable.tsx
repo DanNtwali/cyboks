@@ -20,7 +20,7 @@ const NcsaTable = ({ data, isLoading, perPage, status }: Props) => {
       {
         label: (
           <Link
-            href={`/dashboard/cyboks/info/${value?.id}`}
+            href={`/dashboard/ncsa/info/${value?.id}`}
             className="text-[0.95rem] font-semibold"
           >
             View
@@ -36,7 +36,7 @@ const NcsaTable = ({ data, isLoading, perPage, status }: Props) => {
         type: "divider",
       },
       {
-        label: <ApproveCompanyModal companyId={value.id} isPending={false} />,
+        label: <ApproveCompanyModal companyId={value.id} ncsaApprove={value.ncsaApprove} isPending={false} />,
         key: "send",
         className: openSans.className,
       },
@@ -88,7 +88,7 @@ const NcsaTable = ({ data, isLoading, perPage, status }: Props) => {
 
           case "underreviewer":
             return (
-              <span className="text-yellow-600 font-semibold">Under Cyboks</span>
+              <span className="text-yellow-600 font-semibold">Under cyboks</span>
             );
           case "certified":
             return (

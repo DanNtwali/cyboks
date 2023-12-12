@@ -106,7 +106,7 @@ export default function dpoStage2() {
   return (
     <main className="overflow-y-auto sm:flex sm:flex-row w-full h-screen bg-fixed bg-center bg-cover bg-[url('../assets/images/back.png')]">
       <div>
-        <Sidebar />
+        <Sidebar  name={documment?.user?.companyName}/>
         <Navbar />
       </div>
       <div className=" p-4 sm:ml-64 sm:mt-10 mb-8">
@@ -175,7 +175,7 @@ export default function dpoStage2() {
           {documment?
           <div>
             <ViewDocs userId={documment.user.id} viewdocs={docs}/>
-            <YouTube videoId={videoId[videoId.length - 1]} className="mt-8 rounded-lg"/>
+            {videoId?<YouTube videoId={videoId[videoId?.length - 1]} className="mt-8 rounded-lg"/>:""}
           </div>
           
           :''}

@@ -101,12 +101,12 @@ function dpoDashboard() {
             <AdDocModal/>
           </div>
           <div className=" p-2 rounded-lg sm:rounded-lg m-2">
-            <AdDocComments options={options}  docsId={16} userId={userId}/>
+            <AdDocComments options={options}  docsId={3} userId={userId}/>
           </div>
         </div>
         <div className="flex flex-row gap-8 mb-4">
         <ViewDocs userId={userId} viewdocs={docs}/>
-          <ViewCommentChat options={options} userId={userId} documentId={16}/>
+          <ViewCommentChat options={options} userId={userId} documentId={3}/>
         </div>
       </div>
     </main>

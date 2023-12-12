@@ -59,7 +59,7 @@ function ViewAdminDocs({userId}: Props_) {
               doclink: user?.clientDoc[0].legalInst?.replace(/"/g, "")
             },
             {
-              docname: 'Represanter Contract',
+              docname: 'Representative Contract',
               doclink: user?.clientDoc[0].repContract?.replace(/"/g, "")
             },
           ])

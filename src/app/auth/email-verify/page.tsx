@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import bgImg from "../../../assets/images/signup_bg.png";
 import { Controller, useForm } from "react-hook-form";
@@ -15,6 +15,7 @@ const SignupVerifyPage: React.FC = () => {
   // local states
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [verificationCode, setVerificationCode] = useState<string[]>([]);
+  const [emailBody, setEmailBody] = useState<any>(false);
 
   // router
   const router = useRouter();
@@ -48,22 +49,34 @@ const SignupVerifyPage: React.FC = () => {
 
     const dataCode = number.toString();
 
-    const code = { code: dataCode };
-    const emailBody = { ...code, email };
+    const code =  verificationCode.join('') 
+    setEmailBody({ code: code, email: email });
 
-    const res = await server.post<any>("/auth/verify", emailBody);
+    // console.log('The passed body is: ', emailBody)
+
+   
+  };
+
+  useEffect(() => {
+    async function sendEmail(emailBody: any){
+       const res = await server.post<any>("/auth/verify", emailBody);
 
     if (res.data.status == 200 && res.data.userEmail) {
       toast.success(
         "Your email address has confirmed successfully. Please login!"
       );
 
+      console.log("The passed body is:", emailBody);
       return router.push("/");
     } else {
       setIsLoading(false);
       return toast.error("Verification code has expired or not valid.");
     }
-  };
+    }
+    if(emailBody){
+      sendEmail(emailBody);
+    }
+  }, [emailBody]);
 
   const handlePaste = (e: React.ClipboardEvent<HTMLInputElement>) => {
     const pastedText = e.clipboardData.getData("text");

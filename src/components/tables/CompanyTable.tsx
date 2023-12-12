@@ -36,7 +36,7 @@ const CompanyTable = ({ data, isLoading, perPage, status }: Props) => {
         type: "divider",
       },
       {
-        label: <ApproveCompanyModal companyId={value.id} isPending />,
+        label: <ApproveCompanyModal reviewerApprove={value.reviewerApprove} companyId={value.id} isPending />,
         key: "send",
         className: openSans.className,
       },
@@ -106,7 +106,7 @@ const CompanyTable = ({ data, isLoading, perPage, status }: Props) => {
 
           case "underreviewer":
             return (
-              <span className="text-yellow-500 font-semibold">Under Cyboks</span>
+              <span className="text-yellow-500 font-semibold">Under cyboks</span>
             );
           case "certified":
             return (

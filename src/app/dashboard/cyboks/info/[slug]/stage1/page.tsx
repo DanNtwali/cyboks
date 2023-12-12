@@ -56,7 +56,7 @@ fetchData();
   return (
     <main className="overflow-y-auto sm:flex sm:flex-row w-full h-screen bg-fixed bg-center bg-cover bg-[url('../assets/images/back.png')]">
       <div>
-        <Sidebar />
+        <Sidebar name={user?.user?.companyName}/>
         <Navbar />
       </div>
       <div className="p-4 sm:ml-64">
@@ -101,7 +101,7 @@ fetchData();
             {user?<PrimaryRevDocModal docsId={user?.id} />:""}
             </div>
             <div className=" p-2 rounded-lg sm:rounded-lg m-2">
-            {user?<AdDocComments options={options} docsId={user?.id} userId={9}/>:""}
+            {user?<AdDocComments options={options} docsId={user?.id} userId={7}/>:""}
             </div>
           </div>
           <div className="flex flex-row gap-8 mb-4">
