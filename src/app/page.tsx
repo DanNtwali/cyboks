@@ -48,7 +48,7 @@ export default function HomePage() {
       email: data.email,
       password: data.password,
       redirect: false,
-      callbackUrl: "/dashboard/Cyboks",
+      callbackUrl: "/dashboard/cyboks",
     });
 
     if (res && res.ok) {

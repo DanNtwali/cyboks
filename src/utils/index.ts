@@ -44,8 +44,8 @@ export const getFormattedDate = (t: any) => {
   // helper function for getting the url based on the pathname
   export const getUrlByPathname = (url: string): string => {
     switch (url) {
-      case "/dashboard/Cyboks":
-        return "/dashboard/Cyboks";
+      case "/dashboard/cyboks":
+        return "/dashboard/cyboks";
 
       case "/dashboard/ncsa":
         return "/dashboard/ncsa";

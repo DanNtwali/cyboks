@@ -54,7 +54,7 @@ const DPODashboard = () => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const response = await axiosAPI.get<any>(`/getData/users/${9}`);
+        const response = await axiosAPI.get<any>(`/getData/users/${7}`);
         setUser(response);
         console.log("Fetched data", response);
       } catch (error) {
@@ -148,7 +148,7 @@ const DPODashboard = () => {
             
             <div>
               <ViewDocs userId={9} viewdocs={docs}/>
-              <YouTube videoId={videoId[videoId.length - 1]} className="mt-8 rounded-lg"/>
+              {videoId?<YouTube videoId={videoId[videoId?.length - 1]} className="mt-8 rounded-lg"/>:""}
             </div>
             <ViewCommentChat options={options} userId={9} documentId={16}/>
 

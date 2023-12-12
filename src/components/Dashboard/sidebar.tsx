@@ -39,7 +39,7 @@ const Sidebar = () => {
           </Link>
         </li>
 
-        {(url === "/dashboard/Cyboks" || url === "/dashboard/ncsa") && (
+        {(url === "/dashboard/cyboks" || url === "/dashboard/ncsa") && (
           <SidebarDropdown />
         )}
 

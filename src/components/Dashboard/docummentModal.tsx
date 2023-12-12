@@ -24,7 +24,7 @@ function AdDocModal() {
     setIsLoading(true)
     console.log('Submit', filesData);
     try {
-      const response = axiosAPI.post(`/clientDocs/docs/${9}`, filesData);
+      const response = axiosAPI.put(`/update/updateClientDocs/${9}`, filesData);
       console.log(response); // Handle the response as needed
       setIsLoading(false)
       toast.success('Docs uploaded succesfully');

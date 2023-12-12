@@ -20,7 +20,7 @@ const CompanyTable = ({ data, isLoading, perPage, status }: Props) => {
       {
         label: (
           <Link
-            href={`/dashboard/Cyboks/info/${value?.id}/stage1`}
+            href={`/dashboard/cyboks/info/${value?.id}/stage1`}
             className="text-[0.95rem] font-semibold"
           >
             View

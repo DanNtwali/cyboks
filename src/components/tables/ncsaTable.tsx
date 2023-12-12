@@ -20,7 +20,7 @@ const NcsaTable = ({ data, isLoading, perPage, status }: Props) => {
       {
         label: (
           <Link
-            href={`/dashboard/Cyboks/info/${value?.id}`}
+            href={`/dashboard/cyboks/info/${value?.id}`}
             className="text-[0.95rem] font-semibold"
           >
             View

@@ -23,15 +23,15 @@ export async function middleware(request: NextRequest) {
 
   // Guest routes
   if (decodedToken && url.startsWith("/auth")) {
-    return NextResponse.redirect(new URL("/dashboard/Cyboks", request.url));
+    return NextResponse.redirect(new URL("/dashboard/cyboks", request.url));
   }
 
   if (decodedToken && url == "/") {
-    return NextResponse.redirect(new URL("/dashboard/Cyboks", request.url));
+    return NextResponse.redirect(new URL("/dashboard/cyboks", request.url));
   }
 
   // Role-based
-  // if (decodedToken && url === `/dashboard/Cyboks` && userRole === USER_ROLES.DPO) {
+  // if (decodedToken && url === `/dashboard/cyboks` && userRole === USER_ROLES.DPO) {
   //   return NextResponse.redirect(new URL(`/dashboard/dpo`, request.url));
   // }
 
@@ -48,7 +48,7 @@ export async function middleware(request: NextRequest) {
     url === `/dashboard/dpo` &&
     userRole === USER_ROLES.REVIEWER
   ) {
-    return NextResponse.redirect(new URL(`/dashboard/Cyboks`, request.url));
+    return NextResponse.redirect(new URL(`/dashboard/cyboks`, request.url));
   }
 
   if (
@@ -56,7 +56,7 @@ export async function middleware(request: NextRequest) {
     url === `/dashboard/ncsa` &&
     userRole === USER_ROLES.REVIEWER
   ) {
-    return NextResponse.redirect(new URL(`/dashboard/Cyboks`, request.url));
+    return NextResponse.redirect(new URL(`/dashboard/cyboks`, request.url));
   }
 
   if (
@@ -69,7 +69,7 @@ export async function middleware(request: NextRequest) {
 
   if (
     decodedToken &&
-    url === `/dashboard/Cyboks` &&
+    url === `/dashboard/cyboks` &&
     userRole === USER_ROLES.NCSA
   ) {
     return NextResponse.redirect(new URL(`/dashboard/ncsa`, request.url));

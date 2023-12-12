@@ -18,28 +18,28 @@ type SignupForm = z.infer<typeof signupSchema>;
 
 export default function SignupPage() {
   // local states
-  const [CyboksTeamVisible, setCyboksTeamVisible] = useState(true);
+  const [cyboksTeamVisible, setcyboksTeamVisible] = useState(true);
   const [ncsaTeamVisible, setNcsaTeamVisible] = useState(false);
-  const [CyboksClientVisible, setCyboksClientVisible] = useState(false);
+  const [cyboksClientVisible, setcyboksClientVisible] = useState(false);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   // some handlers
-  const handleCyboksTeamClick = () => {
-    setCyboksTeamVisible(true);
+  const handlecyboksTeamClick = () => {
+    setcyboksTeamVisible(true);
     setNcsaTeamVisible(false);
-    setCyboksClientVisible(false);
+    setcyboksClientVisible(false);
   };
 
   const handleNcsaTeamClick = () => {
-    setCyboksTeamVisible(false);
+    setcyboksTeamVisible(false);
     setNcsaTeamVisible(true);
-    setCyboksClientVisible(false);
+    setcyboksClientVisible(false);
   };
 
-  const handleCyboksClientClick = () => {
-    setCyboksTeamVisible(false);
+  const handlecyboksClientClick = () => {
+    setcyboksTeamVisible(false);
     setNcsaTeamVisible(false);
-    setCyboksClientVisible(true);
+    setcyboksClientVisible(true);
   };
 
   // router
@@ -56,7 +56,7 @@ export default function SignupPage() {
 
   const onSubmit = handleSubmit(async (data) => {
     // Some extra email validation
-    if (CyboksTeamVisible && !data.email.endsWith("@cyboks.com")) {
+    if (cyboksTeamVisible && !data.email.endsWith("@cyboks.com")) {
       return toast.error("Invalid Cyboks email address.");
     }
 
@@ -72,19 +72,22 @@ export default function SignupPage() {
         password: data.password,
         companyName: data.companyName,
         accessLevel: "high",
-        role: CyboksClientVisible
+        role: cyboksClientVisible
           ? USER_ROLES.DPO
           : ncsaTeamVisible
           ? USER_ROLES.NCSA
           : USER_ROLES.REVIEWER,
       };
       setIsLoading(true);
-
+      
+      console.log("payload", payload);
       const res = await server.post("/auth/signup", payload);
+      
+      console.log("res", res);
 
-      if (res.data.success && res.data.data.email) {
-        return router.push(res.data.data.email);
-      }
+     if (res.data.success && res.data.data.email) {
+       return router.push(res.data.data.email);
+     }
 
       if (res.data.status === "error") {
         toast.error(res.data.message || "Something went wrong.");
@@ -116,8 +119,8 @@ export default function SignupPage() {
                       name="personelselection"
                       type="checkbox"
                       className="w-4 h-4 text-white bg-white border-violet-600 focus:ring-0 dark:focus:ring-0 dark:ring-offset-violet-800 focus:ring-0 dark:bg-violet-700 dark:border-white"
-                      checked={CyboksTeamVisible}
-                      onChange={handleCyboksTeamClick}
+                      checked={cyboksTeamVisible}
+                      onChange={handlecyboksTeamClick}
                     />
                     <span className="ml-2 text-sm text-white font-semibold ">
                       Cyboks Team
@@ -140,8 +143,8 @@ export default function SignupPage() {
                       name="personelselection"
                       type="checkbox"
                       className="w-4 h-4 text-white bg-violet-500 border-violet-500 dark:focus:ring-0 dark:ring-offset-violet-800 focus:ring-0 dark:bg-violet-700 dark:border-white"
-                      checked={CyboksClientVisible}
-                      onChange={handleCyboksClientClick}
+                      checked={cyboksClientVisible}
+                      onChange={handlecyboksClientClick}
                     />
                     <span className="ml-2 text-sm text-white font-semibold ">
                       Cyboks Client
@@ -150,8 +153,8 @@ export default function SignupPage() {
                 </label>
               </div>
               <div className="">
-                <div className={CyboksTeamVisible ? "flex items-center mt-4" : ""}>
-                  {CyboksTeamVisible && (
+                <div className={cyboksTeamVisible ? "flex items-center mt-4" : ""}>
+                  {cyboksTeamVisible && (
                     <div className="w-full flex flex-col gap-4">
                       <div className="flex items-center gap-4">
                         <div>
@@ -247,7 +250,7 @@ export default function SignupPage() {
                             type="text"
                             id="name"
                             className="text-white rounded-md bg-black bg-opacity-0 border border-white text-sm focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5 mt-[2px]"
-                            placeholder="Cyboks Representative Name"
+                            placeholder="NCSA Representative Name"
                             {...register("username")}
                           />
 
@@ -265,7 +268,7 @@ export default function SignupPage() {
                             type="email"
                             id="email"
                             className="text-white rounded-md bg-black bg-opacity-0 border border-white text-sm focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5 mt-[2px]"
-                            placeholder="Cyboks Representative Email"
+                            placeholder="NCSA Representative Email"
                             {...register("email")}
                           />
 
@@ -313,9 +316,9 @@ export default function SignupPage() {
                   )}
                 </div>
                 <div
-                  className={CyboksClientVisible ? "flex items-center mt-4" : ""}
+                  className={cyboksClientVisible ? "flex items-center mt-4" : ""}
                 >
-                  {CyboksClientVisible && (
+                  {cyboksClientVisible && (
                     <div className="w-full flex flex-col gap-4">
                       <div className="flex items-center gap-4">
                         <div>

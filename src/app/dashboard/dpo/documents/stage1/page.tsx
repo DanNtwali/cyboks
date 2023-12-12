@@ -14,7 +14,7 @@ function dpoDashboard() {
   const [user, setUser] = useState<any>(false);
   const [docs, setDocs] = useState<any>([]);
   const [isLoading, setIsLoading] = useState(false);
-  const userId = 9
+  const userId = 7
   console.log('the user ID', userId)
   useEffect(() => {
       const fetchData = async () => {
@@ -101,12 +101,12 @@ function dpoDashboard() {
             <AdDocModal/>
           </div>
           <div className=" p-2 rounded-lg sm:rounded-lg m-2">
-            <AdDocComments options={options}  docsId={16} userId={9}/>
+            <AdDocComments options={options}  docsId={16} userId={userId}/>
           </div>
         </div>
         <div className="flex flex-row gap-8 mb-4">
-        <ViewDocs userId={9} viewdocs={docs}/>
-          <ViewCommentChat options={options} userId={9} documentId={16}/>
+        <ViewDocs userId={userId} viewdocs={docs}/>
+          <ViewCommentChat options={options} userId={userId} documentId={16}/>
         </div>
       </div>
     </main>
