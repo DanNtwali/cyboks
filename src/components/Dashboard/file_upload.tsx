@@ -11,7 +11,7 @@ type InputProps = {
     handleFileChange: any,
 }
 
-export const FileUpload = ({ labelClass, labelName, disable, inputType, inputClass, inputName, containerClass, handleFileChange }: InputProps) => <>
+export const FileUpload = ({ labelClass, labelName, disable, inputType, inputClass, inputName, containerClass, handleFileChange,  }: InputProps) => <>
     <div className={containerClass}>
         <label className={labelClass} htmlFor="default_size">{labelName}</label>
         <input className={inputClass} id="default_size" type='file' name={inputName} disabled={disable} onChange={(e: any) => { handleFileChange(e.target.files[0]) }}></input>
